@@ -1,0 +1,164 @@
+.best-courses-body{
+    /* height: 150vh; */
+    padding-top: 2rem;
+    /* border: 2px solid red; */
+    background: rgba(0, 0, 0, 0.1);
+    /* border-top-left-radius: 10rem; */
+    /* border-top-right-radius: 10rem; */
+    /* background: #fff; */
+    /* background: #f9e8e8; */
+
+}
+
+.bc-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    /* margin-top: 3rem; */
+    padding-top: 6rem;
+    font-family: "Roboto Slab", serif;
+    margin-bottom: 4rem;
+    /* word-spacing: 1rem; */
+}
+
+/* .bc-header FontAwesomeIcon{
+    margin-left: 3rem;
+    padding-left: 3rem;
+} */
+
+
+.best-courses-container-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    /* border-top-left-radius: 10rem;
+    border-top-right-radius: 10rem;
+    background: #fff; */
+}
+
+.bc-container{
+    position: relative;
+    width: 25rem;
+    height: 35rem;
+    cursor: pointer;
+    /* background: green; */
+}
+
+.bc-card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+    /* overflow: hidden; */
+    
+    /* background: yellow; */
+
+}
+
+.bc-card img{
+    width: 100%;
+    height: auto;
+    height: 17rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.bc-container:hover .bc-card{
+    transform: rotateY(180deg);
+}
+
+.bc-card-front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #fff;
+    /* color: white; */
+    border-radius: 1rem;
+    
+}
+
+.bc-bg-added p{
+    font-size: 1.5rem;
+    margin: 6rem 2rem;
+    font-family: "Roboto Slab", serif;
+    color: #fff;
+}
+.bc-bg-added h3{
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: "Bricolage Grotesque", sans-serif;
+    margin: 1rem 2rem;
+    font-weight: 400;
+    /* margin: 5rem 2rem; */
+}
+
+.bc-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.bc-card-back h3{
+    /* color: rgb(135, 53, 162); */
+    color: red;
+    font-size: 1rem;
+    font-family: "Roboto Slab", serif;
+}
+.bc-card-back p{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 500;
+}
+
+.bc-card-back hr{
+    border: 1px solid red;
+    width: 100%;
+}
+.bc-card-back h2{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: 1.5rem;
+    word-spacing: 1rem;
+    /* color: rgb(139, 69, 129); */
+}
+.bc-bg-added{
+    background-image: url("./public/images/bc-cyber-img.jpg");
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* background: green; */
+}
+
+.bc-card-front .bc-content{
+    font-size: 2rem;
+    font-family: "Bricolage Grotesque", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    font-weight: 450;
+}
+
+.bc-second-front-para{
+    font-size: 1.5rem;
+    margin: 0rem 2rem;
+    font-family: "Roboto Slab", serif;
+}

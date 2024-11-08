@@ -1,0 +1,199 @@
+.About-body{
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.1);
+    /* background: #f3f3f3; */
+}
+
+.AboutUs-Head{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 75vh;
+    
+    /* overflow-x: hidden; */
+    /* background: #f3f3f3; */
+}
+
+.abt-Heading{
+    text-align: center;
+    font-size: 5rem;
+    /* margin: 3rem 0rem; */
+    /* background: #f3f3f3; */
+    
+    padding-top: 2rem;
+    /* width: 100%; */
+    /* border: 2px solid green; */
+    overflow: hidden;
+    transform: rotate(-90deg);
+}
+
+.Abt-container{
+    position: relative;
+    /* chnged */
+    /* width: 1050px; */
+
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transform: skewY(-10deg);
+    
+    /* border: 2px solid red; */
+}
+
+.Abt-container .Abt-card{
+    position: relative;
+    /* chnged */
+    /* width: 300px; */
+
+    width: 28%;
+    height: 300px;
+    background: #fff;
+    transition: 0.5s;
+}
+
+.Abt-container .Abt-card:before{
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: linear-gradient(45deg, rgba(210, 0, 26), rgba(116, 98, 255), rgba(244, 142, 33), rgba(35, 213, 171));
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+}
+
+.Abt-container .Abt-card:after{
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 15px;
+    height: 50%;
+    /* height:150px; */
+    background: linear-gradient(45deg, rgba(210, 0, 26, 0.5), rgba(116, 98, 255, 0.5), rgba(244, 142, 33, 0.5), rgba(35, 213, 171, 0.5));
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    transform-origin: left;
+    transform: skewY(45deg);
+    transition: 0.5s;
+    border-bottom: 200px solid #d9d9d9;
+}
+
+.Abt-container .Abt-card:hover{
+    transform: translateY(-40px);
+}
+
+.Abt-container .Abt-card .imgBx{
+    position: relative;
+    pointer-events: none;
+    /* width: 300px; */
+    width: 100%;
+    height: 200px;
+    /* background: #00c7ff; */
+    background: linear-gradient(45deg, rgba(210, 0, 26, 0.8), rgba(116, 98, 255, 0.8), rgba(244, 142, 33, 0.8), rgba(35, 213, 171, 0.8));
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+@keyframes color{
+    0% {
+        background-position: 0 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.Abt-container .Abt-card  .imgBx img{
+    filter: invert(1);
+    max-width: 100px;
+}
+
+.Abt-container .Abt-card .imgBx h3{
+
+    position: relative;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    margin-top: 10px;
+}
+
+.Abt-container .Abt-card .Abt-content{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    padding: 20px;
+    font-size: 1rem;
+    color: #777;
+    /* color: black; */
+    background: #fff;
+    /* font-family: 'Platipy', serif; */
+    text-align: center;
+}
+
+.Abt-container .Abt-card .Abt-content p{
+    pointer-events: none;
+}
+
+.Abt-container .Abt-card .Abt-content:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.3));
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.Abt-container .Abt-card:hover .Abt-content:before{
+    transform: translateY(40px) skewX(45deg);
+    filter: blur(5px);
+    opacity: 0.5;
+}
+
+.Abt-container .Abt-card:nth-child(1){
+    z-index: 3;
+}
+.Abt-container .Abt-card:nth-child(2){
+    z-index: 2;
+}
+.Abt-container .Abt-card:nth-child(3){
+    z-index: 1;
+}
+
+.About-body video{
+    position: absolute;
+    z-index: -100;
+    /* left: 6; */
+    /* height: 80vh; */
+    height: 80%;
+    /* min-width: 100%; */
+    transform:rotate(90deg)
+}
+

@@ -1,0 +1,175 @@
+/* Navbar */
+
+.Navbar-Head{
+    /* border: 2px solid red; */
+    /* border-radius: 10rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    z-index: 200;
+    height: 5.5rem;
+    /* overflow: hidden; */
+    position: fixed;
+    /* background-color: black; */
+}
+.Navbar-Ul{
+    /* border: 2px solid #00aeff; */
+    /* border-radius: 10rem; */
+    /* background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab); */
+
+    /* background-color: random continuous; */
+    /* background: linear-gradient(45deg, rgba(210, 0, 26, 0.8), rgba(116, 98, 255, 0.8), rgba(244, 142, 33, 0.8), rgba(35, 213, 171, 0.8));
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite; */
+
+    border-bottom-left-radius: 8rem;
+    /* background: rgba(0, 0, 0, 0.3); */
+    backdrop-filter: blur(10px);
+    /* background: rgba(0,0,0,0.4); */
+    /* backdrop-filter: saturate(180%) blur(10px); */
+    /* background: transparent; */
+    height: auto;
+    border-bottom-right-radius: 8rem;
+    width: 85%;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    /* box-shadow: 0 1.25rem 1.5625rem rgba(0,0,0,0.1); */
+    /* background-color: black; */
+    overflow: hidden;
+    transition: 1.5s;
+    /* z-index: 200; */
+}
+
+.Navbar-Ul-BackgroundChng{
+    /* background-color: rgba(125, 72, 139, 0.7); */
+    background-color: rgb(35, 35, 35, 0.7);
+    transition: 1.5s;
+}
+
+
+/* @keyframes color{
+    0% {
+        background-position: 0 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0 50%;
+    }
+} */
+
+.Navbar-Li{
+    font-size: 1.1rem;
+    /* margin: 0rem 2rem; */
+    /* background-color: transparent; */
+    /* border: 2px solid blue; */
+    /* width: 10%; */
+    
+    /* height: 10%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 0.5rem;
+}
+
+.Logo-Img{
+    height: 7rem;
+    width: 7rem;
+    /* border: 2px solid pink; */
+}
+
+.img-logo{
+    /* display: flex;
+    align-items: flex-start ; */
+    margin-right: 2rem;
+    display: flex;
+    align-items: flex-start;
+    width: 35%;
+    /* filter: invert(1); */
+    transition: 1s;
+    /* border: 2px solid black; */
+}
+.img-logo:hover{
+    filter: invert(1);
+    transition: 1s;
+    /* height: 9rem;
+    width: 9rem; */
+}
+
+
+.Nav-Link{
+    /* color: #fff; */
+    /* color: black; */
+    font-family: "Roboto Slab", serif;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    padding: 10px 30px;
+    /* border: 2px solid #00aeff; */
+    border-radius: 20px;
+    /* color: #00aeff; */
+    color: white;
+    overflow: hidden;
+    /* flex: 1; */
+}
+.Active-Link{
+    /* top: 0.5 !important; */
+    border: 2px solid #00aeff;
+    /* border: 2px solid #fff; */
+    
+}
+
+
+
+.Nav-Link span{
+    position: relative;
+    z-index: 1;
+    transition: 1.5s;
+}
+
+.Nav-Link .wave{
+    position: absolute;
+    top: calc(100% + 22px);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00aeff;
+    transition: 1.5s;
+}
+
+.Nav-Link:hover .wave{
+    top: 0;
+    /* color: white */
+}
+
+.Nav-Link .wave:before{
+    content: '';
+    position: absolute;
+    top: -22px;
+    left: 0;
+    width: 100%;
+    height: 22px;
+    background: url(../public/images/wave.png);
+    animation: animate-nav 0.5s linear infinite;
+}
+
+@keyframes animate-nav {
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 118px;
+    }
+}
+
+
+
